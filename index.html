@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[Your Name] — Operations &amp; Administrative Professional</title>
+<meta name="description" content="Operations and administrative professional. End-to-end procurement, administration, and client support — turning manual work into systems that hold. Open to remote roles." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="[Your Name] — Operations & Administrative Professional" />
+<meta property="og:description" content="The quiet engine behind a busy operation. Procurement, administration, and client support, end-to-end." />
+<meta property="og:image" content="[link-to-preview-image.jpg]" />
+<meta name="theme-color" content="#0E1116" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0E1116; --ink-soft:#1b2230; --navy:#1F3A5F; --gold:#B0802A;
+    --slate:#454d5a; --slate-2:#737b88; --slate-3:#9aa1ac;
+    --mist:#F7F8F9; --mist-2:#F0F2F4;
+    --line:#ECEEF1; --line-2:#E3E6EA; --paper:#FFFFFF;
+    --maxw:1140px;
+    --pad-x:clamp(22px,5vw,44px);
+    --sec-y:clamp(92px,13vw,172px);
+    --r:16px; --r-lg:22px;
+    --sh-1:0 1px 2px rgba(14,17,22,.03);
+    --sh-card:0 1px 2px rgba(14,17,22,.03), 0 10px 30px -22px rgba(14,17,22,.16);
+    --sh-hover:0 2px 4px rgba(14,17,22,.04), 0 26px 48px -28px rgba(14,17,22,.30);
+    --sh-float:0 24px 60px -34px rgba(14,17,22,.42), 0 4px 14px -8px rgba(14,17,22,.12);
+    --display:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --serif:'Source Serif 4',Georgia,serif;
+    --ease:cubic-bezier(.22,.7,.24,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    font-family:var(--display);color:var(--ink);background:var(--paper);
+    line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    font-feature-settings:"cv05","ss01";overflow-x:hidden;letter-spacing:-.005em;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  ::selection{background:var(--gold);color:#fff}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad-x)}
+
+  /* ---------- type ---------- */
+  .kicker{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--navy);display:inline-flex;align-items:center;gap:11px}
+  .kicker::before{content:"";width:20px;height:1.5px;background:var(--gold)}
+  .idx{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--slate-3);letter-spacing:.14em}
+  h1,h2,h3{letter-spacing:-.028em;line-height:1.05;font-weight:800}
+  h2{font-size:clamp(29px,4.6vw,44px);line-height:1.08}
+  h3{font-size:clamp(19px,2.1vw,22px);letter-spacing:-.02em;line-height:1.2}
+  .lead{font-size:clamp(17px,1.9vw,20px);color:var(--slate);line-height:1.55;letter-spacing:-.01em}
+  .spec{font-family:var(--mono);font-size:12px;letter-spacing:.01em;color:var(--slate-2)}
+  .spec b{color:var(--ink);font-weight:600}
+
+  .ph{color:var(--navy);background:rgba(31,58,95,.045);border-bottom:1px dashed rgba(31,58,95,.5);
+    padding:0 3px;border-radius:3px;font-weight:500;white-space:nowrap}
+  .ph-block{color:var(--navy)}
+
+  /* ---------- buttons (no decorative underline in V2) ---------- */
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;
+    padding:14px 24px;border-radius:12px;border:1px solid transparent;cursor:pointer;letter-spacing:-.01em;
+    transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s,border-color .25s,color .25s}
+  .btn svg{width:16px;height:16px;transition:transform .35s var(--ease)}
+  .btn-primary{background:var(--ink);color:#fff;box-shadow:0 10px 24px -16px rgba(14,17,22,.8)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 32px -18px rgba(14,17,22,.85)}
+  .btn-primary:hover svg{transform:translateX(3px)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .btn-sm{padding:11px 18px;font-size:13.5px;border-radius:10px}
+
+  /* ---------- nav ---------- */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,box-shadow .4s,border-color .4s}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;
+    max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad-x)}
+  .nav.scrolled{background:rgba(255,255,255,.74);backdrop-filter:saturate(180%) blur(16px);
+    -webkit-backdrop-filter:saturate(180%) blur(16px);box-shadow:0 1px 0 var(--line)}
+  .brand{display:flex;align-items:baseline;gap:10px;font-weight:800;letter-spacing:-.03em;font-size:16px}
+  .brand .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);transform:translateY(-1px)}
+  .brand small{font-family:var(--mono);font-weight:500;font-size:10.5px;letter-spacing:.12em;color:var(--slate-3);text-transform:uppercase}
+  .nav-links{display:flex;align-items:center;gap:34px}
+  .nav-links a{font-size:14px;color:var(--slate-2);font-weight:500;position:relative;padding:6px 0;transition:color .25s}
+  .nav-links a .n{font-family:var(--mono);font-size:10px;color:var(--slate-3);margin-right:7px;letter-spacing:.06em}
+  .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+  .nav-links a.active::after{content:"";position:absolute;left:0;width:5px;height:5px;border-radius:50%;background:var(--gold);bottom:-3px}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .burger{display:none;background:none;border:none;width:42px;height:42px;cursor:pointer;align-items:center;justify-content:center}
+  .burger span{width:20px;height:1.5px;background:var(--ink);display:block;transition:.3s}
+  .burger span::before,.burger span::after{content:"";position:absolute;width:20px;height:1.5px;background:var(--ink);transition:.3s}
+  .burger span::before{transform:translateY(-6px)}.burger span::after{transform:translateY(6px)}
+  body.menu-open .burger span{background:transparent}
+  body.menu-open .burger span::before{transform:rotate(45deg)}
+  body.menu-open .burger span::after{transform:rotate(-45deg)}
+  .mobile-menu{position:fixed;inset:72px 0 0;z-index:55;background:var(--paper);
+    transform:translateY(-10px);opacity:0;visibility:hidden;transition:.35s var(--ease);padding:28px var(--pad-x) 40px;display:flex;flex-direction:column}
+  body.menu-open .mobile-menu{transform:none;opacity:1;visibility:visible}
+  .mobile-menu a{font-size:23px;font-weight:700;letter-spacing:-.03em;padding:17px 0;display:flex;align-items:baseline;gap:13px;color:var(--ink)}
+  .mobile-menu a + a{box-shadow:0 -1px 0 var(--line)}
+  .mobile-menu a .n{font-family:var(--mono);font-size:12px;color:var(--gold)}
+  .mobile-cta-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px var(--pad-x) calc(12px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.86);backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--line);display:none;gap:10px}
+  .mobile-cta-bar .btn{flex:1;justify-content:center}
+
+  /* ---------- hero ---------- */
+  .hero{padding-top:152px;padding-bottom:var(--sec-y);position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;
+    background:radial-gradient(130% 90% at 88% -20%,rgba(31,58,95,.06),transparent 58%)}
+  .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:clamp(40px,6vw,88px);align-items:center}
+  .status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11.5px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--slate-2)}
+  .status .pulse{width:7px;height:7px;border-radius:50%;background:var(--gold);position:relative}
+  .status .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid var(--gold);animation:pulse 2.6s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.5);opacity:.7}100%{transform:scale(1.9);opacity:0}}
+  h1{font-size:clamp(38px,6.6vw,66px);font-weight:800;margin:26px 0 0;max-width:15ch;letter-spacing:-.035em;line-height:1.02}
+  h1 .accent{position:relative;white-space:nowrap}
+  h1 .accent::after{content:"";position:absolute;left:-.02em;right:-.02em;bottom:.08em;height:.1em;background:var(--gold);opacity:.55;z-index:-1;border-radius:2px}
+  .hero-lead{margin-top:28px;max-width:44ch;font-size:clamp(17px,1.9vw,20px);color:var(--slate);line-height:1.6}
+  .hero-status-line{margin-top:30px}
+  .hero-cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+
+  .portrait-stack{position:relative}
+  .portrait{aspect-ratio:4/5;border-radius:var(--r-lg);
+    background:linear-gradient(150deg,#f4f6f8,#e9edf1);box-shadow:var(--sh-float);
+    position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .portrait .ph-photo{font-family:var(--mono);font-size:11.5px;color:var(--slate-3);text-align:center;letter-spacing:.05em;line-height:1.9;padding:20px}
+  .portrait .ph-photo svg{width:32px;height:32px;margin:0 auto 14px;opacity:.45}
+  .spec-card{position:absolute;left:-22px;bottom:-26px;background:var(--paper);
+    border-radius:var(--r);box-shadow:var(--sh-float);padding:18px 20px;min-width:238px}
+  .spec-card .sc-row{display:flex;justify-content:space-between;gap:18px;padding:7px 0;font-family:var(--mono);font-size:11px}
+  .spec-card .sc-row + .sc-row{box-shadow:0 -1px 0 var(--line)}
+  .spec-card .k{color:var(--slate-3);letter-spacing:.08em}
+  .spec-card .v{color:var(--ink);font-weight:600;text-align:right}
+
+  /* ---------- proof bar (borderless, spacing-led) ---------- */
+  .proof{background:var(--mist)}
+  .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,44px);
+    padding-block:clamp(40px,6vw,68px)}
+  .stat .num{font-size:clamp(32px,4.8vw,48px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+  .stat .num .tick{color:var(--gold)}
+  .stat .lbl{margin-top:14px;font-size:13.5px;color:var(--slate);line-height:1.5;max-width:22ch}
+
+  /* ---------- section scaffolding ---------- */
+  section.block{padding-block:var(--sec-y)}
+  .alt{background:var(--mist)}
+  .sec-head{max-width:56ch;margin-bottom:clamp(46px,6.5vw,78px)}
+  .sec-head .eye{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+  .sec-head h2{margin-bottom:18px}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(36px,5vw,72px);align-items:start}
+  .about-body .eye{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+  .about-body h2{margin:0 0 30px;max-width:17ch}
+  .about-body p{font-size:18px;color:var(--slate);max-width:58ch;line-height:1.7}
+  .about-body p + p{margin-top:22px}
+  .about-body strong{color:var(--ink);font-weight:600}
+  .why-card{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:36px 32px;position:relative;overflow:hidden;box-shadow:var(--sh-card)}
+  .why-card .kicker{color:#fff}.why-card .kicker::before{background:var(--gold)}
+  .why-card p{margin-top:22px;color:#cdd2da;font-size:16px;line-height:1.68}
+  .why-card .sig{margin-top:26px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+
+  /* competencies (borderless cards) */
+  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,24px)}
+  .comp{background:var(--paper);border-radius:var(--r);padding:clamp(28px,3vw,34px) clamp(26px,2.6vw,30px);
+    box-shadow:var(--sh-card);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .comp:hover{transform:translateY(-5px);box-shadow:var(--sh-hover)}
+  .comp .ic{width:40px;height:40px;border-radius:11px;background:var(--mist);
+    display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .comp .ic svg{width:19px;height:19px;stroke:var(--navy)}
+  .comp h3{margin-bottom:18px}
+  .comp ul{list-style:none}
+  .comp li{font-size:14.5px;color:var(--slate);padding:7px 0 7px 18px;position:relative}
+  .comp li::before{content:"";position:absolute;left:0;top:15px;width:5px;height:5px;border-radius:1px;background:var(--gold)}
+  .comp.dark{background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:center}
+  .comp.dark h3{color:#fff}
+  .comp.dark p{color:#cdd2da;font-size:14.5px;margin-top:14px;line-height:1.6}
+
+  /* experience */
+  .exp{border-radius:var(--r-lg);overflow:hidden;background:var(--paper);box-shadow:var(--sh-card)}
+  .exp-top{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:baseline;justify-content:space-between;
+    padding:32px clamp(28px,3.4vw,40px) 26px}
+  .exp-top .role{font-size:clamp(20px,2.6vw,27px);font-weight:800;letter-spacing:-.03em}
+  .exp-top .role span{color:var(--navy)}
+  .exp-top .co{font-family:var(--mono);font-size:12.5px;color:var(--slate-2);margin-top:8px;letter-spacing:.02em}
+  .exp-top .meta{font-family:var(--mono);font-size:11.5px;color:var(--slate-3);letter-spacing:.04em;text-align:right;line-height:1.8}
+  .exp-body{padding:6px clamp(28px,3.4vw,40px) 38px}
+  .exp-scope{font-size:17px;color:var(--slate);max-width:68ch;margin-bottom:28px;line-height:1.65}
+  .exp-list{list-style:none;display:grid;gap:22px}
+  .exp-list li{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:start}
+  .exp-list li .b{font-family:var(--mono);font-size:10.5px;color:var(--gold);padding-top:5px;letter-spacing:.08em}
+  .exp-list li p{font-size:15.5px;color:var(--slate);line-height:1.6}
+  .exp-list li p strong{color:var(--ink);font-weight:600}
+
+  /* selected projects (case studies) */
+  .projects{display:flex;flex-direction:column;gap:clamp(48px,7vw,96px)}
+  .project{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4.4vw,72px);align-items:center}
+  .project:nth-child(even) .media{order:2}
+  .media{aspect-ratio:4/3;border-radius:var(--r-lg);position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#f1f4f6,#e6ebef);box-shadow:var(--sh-card);
+    display:flex;align-items:center;justify-content:center}
+  .media .glyph{width:52px;height:52px;stroke:var(--navy);opacity:.4}
+  .media .tag{position:absolute;top:16px;left:16px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--slate-3);background:rgba(255,255,255,.78);padding:5px 10px;border-radius:7px}
+  .project .body .pn{font-family:var(--mono);font-size:11.5px;color:var(--gold);letter-spacing:.1em}
+  .project .body h3{margin:14px 0 12px;font-size:clamp(22px,2.6vw,28px)}
+  .project .ctx{font-size:16px;color:var(--slate-2);margin-bottom:26px;line-height:1.6;max-width:42ch}
+  .pao{display:grid;gap:18px}
+  .pao .row{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start}
+  .pao .lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--slate-3);padding-top:4px;text-transform:uppercase}
+  .pao .txt{font-size:15.5px;color:var(--slate);line-height:1.55}
+  .pao .row.out .txt{color:var(--ink);font-weight:500}
+  .pao .row.out .lab{color:var(--gold)}
+
+  /* impact */
+  .impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px)}
+  .imp .big{font-size:clamp(40px,5.6vw,60px);font-weight:800;letter-spacing:-.045em;color:var(--navy);line-height:.95}
+  .imp .desc{margin-top:18px;font-size:15.5px;color:var(--slate);line-height:1.55;max-width:30ch}
+  .imp .desc b{color:var(--ink);font-weight:600}
+  .impact-note{margin-top:clamp(40px,5vw,64px);font-family:var(--mono);font-size:11.5px;color:var(--slate-3);
+    display:flex;gap:12px;align-items:center;letter-spacing:.02em}
+  .impact-note::before{content:"";width:20px;height:1px;background:var(--gold)}
+
+  /* tools */
+  .tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,18px)}
+  .tool{display:flex;align-items:center;gap:13px;padding:18px 20px;border-radius:13px;
+    background:var(--paper);box-shadow:var(--sh-card);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .tool:hover{transform:translateY(-3px);box-shadow:var(--sh-hover)}
+  .tool .td{width:34px;height:34px;border-radius:9px;background:var(--mist);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .tool .td svg{width:18px;height:18px;stroke:var(--navy)}
+  .tool .tn{font-size:14px;font-weight:600;letter-spacing:-.01em}
+  .tool .ts{font-family:var(--mono);font-size:10px;color:var(--slate-3);letter-spacing:.06em;margin-top:1px}
+  .remote-line{margin-top:clamp(26px,3vw,40px);border-radius:14px;padding:22px 24px;background:var(--paper);
+    box-shadow:var(--sh-card);font-family:var(--mono);font-size:12.5px;color:var(--slate);line-height:2}
+  .remote-line b{color:var(--navy)}
+
+  /* testimonials */
+  .test-lead{border-radius:var(--r-lg);padding:clamp(34px,4.4vw,56px);background:var(--paper);
+    box-shadow:var(--sh-card);position:relative}
+  .test-lead .mark{font-family:var(--serif);font-size:68px;line-height:.5;color:var(--gold);opacity:.85;height:34px}
+  .test-lead blockquote{font-family:var(--serif);font-size:clamp(21px,2.8vw,30px);line-height:1.42;
+    color:var(--ink);margin:18px 0 28px;font-weight:400;max-width:46ch;letter-spacing:-.01em}
+  .attr{display:flex;align-items:center;gap:15px}
+  .attr .av{width:46px;height:46px;border-radius:50%;background:var(--mist);
+    display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:var(--slate-3)}
+  .attr .who{font-weight:700;font-size:15px}
+  .attr .who span{display:block;font-weight:500;font-size:13px;color:var(--slate-2)}
+  .test-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.2vw,24px);margin-top:24px}
+  .test-sm{border-radius:var(--r);padding:30px 28px;background:var(--paper);box-shadow:var(--sh-card)}
+  .test-sm p{font-size:16px;color:var(--slate);line-height:1.58;margin-bottom:22px}
+
+  /* contact */
+  .contact{background:var(--ink);color:#fff}
+  .contact .wrap{padding-block:var(--sec-y)}
+  .contact .eye{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .contact .kicker{color:#fff}
+  .contact h2{color:#fff;max-width:15ch;margin-bottom:0}
+  .contact-grid{display:grid;grid-template-columns:1fr .92fr;gap:clamp(38px,5.5vw,72px);align-items:start;margin-top:clamp(36px,4.5vw,52px)}
+  .contact-lead{font-size:18.5px;color:#c4c9d2;max-width:40ch;line-height:1.6}
+  .contact-cta{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0 40px}
+  .contact .btn-primary{background:#fff;color:var(--ink);box-shadow:none}
+  .contact .btn-primary:hover{box-shadow:0 18px 30px -20px rgba(0,0,0,.6)}
+  .contact .btn-ghost{color:#fff;border-color:rgba(255,255,255,.24)}
+  .contact .btn-ghost:hover{background:rgba(255,255,255,.07);border-color:#fff}
+  .contact-specs{display:grid}
+  .contact-specs .row{display:flex;justify-content:space-between;gap:18px;padding:15px 0;
+    box-shadow:0 -1px 0 rgba(255,255,255,.1);font-family:var(--mono);font-size:12.5px}
+  .contact-specs .row:first-child{box-shadow:none}
+  .contact-specs .k{color:#878f9d;letter-spacing:.08em}
+  .contact-specs .v{color:#fff;font-weight:600;text-align:right}
+  .form{background:rgba(255,255,255,.035);border-radius:var(--r-lg);padding:32px}
+  .form label{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#878f9d;display:block;margin-bottom:9px}
+  .form .field + .field{margin-top:20px}
+  .form input,.form textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);
+    border-radius:11px;padding:13px 15px;color:#fff;font-family:var(--display);font-size:15px;transition:.25s}
+  .form input::placeholder,.form textarea::placeholder{color:#6f7785}
+  .form input:focus,.form textarea:focus{outline:none;border-color:rgba(176,128,42,.9);background:rgba(255,255,255,.08)}
+  .form textarea{resize:vertical;min-height:104px}
+  .form .btn{width:100%;justify-content:center;margin-top:22px}
+  .form-note{font-family:var(--mono);font-size:10.5px;color:#6f7785;margin-top:16px;text-align:center;letter-spacing:.03em}
+
+  /* footer (simplified) */
+  footer{background:var(--ink);color:#fff;box-shadow:0 -1px 0 rgba(255,255,255,.08)}
+  .foot{display:flex;flex-wrap:wrap;gap:22px 32px;justify-content:space-between;align-items:center;padding-block:40px}
+  .foot .brand{color:#fff}.foot .brand small{color:#878f9d}
+  .foot-links{display:flex;gap:28px;flex-wrap:wrap}
+  .foot-links a{font-size:14px;color:#aab0bc;transition:color .2s}
+  .foot-links a:hover{color:#fff}
+  .foot-base{padding-bottom:36px;font-family:var(--mono);font-size:11px;color:#6f7785;letter-spacing:.04em}
+
+  /* reveal */
+  .no-js .reveal{opacity:1}
+  .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .js .reveal{opacity:1;transform:none;transition:none}
+    .status .pulse::after{animation:none}
+    .btn,.comp,.tool,.work{transition:none}
+  }
+
+  /* responsive */
+  @media (max-width:980px){
+    .nav-links{display:none}.burger{display:flex}.nav-cta .btn{display:none}
+    .hero{padding-top:128px}
+    .hero-grid{grid-template-columns:1fr;gap:52px}
+    .portrait-stack{max-width:380px}
+    .about-grid{grid-template-columns:1fr}
+    .comp-grid,.impact-grid{grid-template-columns:repeat(2,1fr)}
+    .tools-grid{grid-template-columns:repeat(2,1fr)}
+    .project{grid-template-columns:1fr;gap:28px}
+    .project:nth-child(even) .media{order:0}
+    .contact-grid{grid-template-columns:1fr}
+    .proof-grid{grid-template-columns:repeat(2,1fr);gap:36px}
+    .mobile-cta-bar{display:flex}
+    body{padding-bottom:76px}
+  }
+  @media (max-width:560px){
+    .comp-grid,.impact-grid,.tools-grid,.test-row{grid-template-columns:1fr}
+    .proof-grid{grid-template-columns:1fr;gap:30px}
+    .spec-card{position:static;margin-top:18px;left:0;min-width:0}
+    .exp-top .meta{text-align:left}
+    .pao .row{grid-template-columns:1fr;gap:4px}
+    .pao .lab{padding-top:0}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand"><span class="dot"></span>[Your Name]<small>Ops&nbsp;·&nbsp;Admin</small></a>
+    <div class="nav-links" id="navlinks">
+      <a href="#about"><span class="n">01</span>About</a>
+      <a href="#competencies"><span class="n">02</span>Expertise</a>
+      <a href="#projects"><span class="n">04</span>Projects</a>
+      <a href="#impact"><span class="n">05</span>Results</a>
+      <a href="#contact"><span class="n">08</span>Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary btn-sm">Download résumé
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobilemenu">
+  <a href="#about"><span class="n">01</span>About</a>
+  <a href="#competencies"><span class="n">02</span>Expertise</a>
+  <a href="#experience"><span class="n">03</span>Experience</a>
+  <a href="#projects"><span class="n">04</span>Selected Projects</a>
+  <a href="#impact"><span class="n">05</span>Impact &amp; Results</a>
+  <a href="#tools"><span class="n">06</span>Tools</a>
+  <a href="#testimonials"><span class="n">07</span>Testimonials</a>
+  <a href="#contact"><span class="n">08</span>Contact</a>
+</div>
+<span id="top"></span>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="status"><span class="pulse"></span>Open to remote roles · Available [date]</span>
+        <h1>The <span class="accent">quiet engine</span> behind a busy operation.</h1>
+        <p class="hero-lead">I'm the person who actually enjoys untangling a stalled order, a cluttered inbox, or a process nobody wrote down. Procurement, administration, and client support — run end-to-end, so the work simply gets done.</p>
+        <div class="hero-status-line spec">
+          <b>BASED</b> <span class="ph">[ Metro Manila, PH ]</span>&nbsp;&nbsp;·&nbsp;&nbsp;<b>TIMEZONE</b> PHT (GMT+8)&nbsp;&nbsp;·&nbsp;&nbsp;<b>OVERLAP</b> <span class="ph">[ AEST / EST ]</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary" data-doc>Download résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+          <a href="mailto:[you@email.com]" class="btn btn-ghost">Email me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+        </div>
+      </div>
+      <div class="portrait-stack reveal">
+        <div class="portrait">
+          <div class="ph-photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            [ PROFESSIONAL HEADSHOT ]<br>friendly, well-lit · 4:5
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="sc-row"><span class="k">EXPERIENCE</span><span class="v"><span class="ph">[X]</span>+ yrs ops</span></div>
+          <div class="sc-row"><span class="k">SCOPE</span><span class="v">Procure · Admin · Support</span></div>
+          <div class="sc-row"><span class="k">STACK</span><span class="v">Workspace · Office</span></div>
+          <div class="sc-row"><span class="k">ENGLISH</span><span class="v">Professional / fluent</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROOF -->
+<section class="proof" aria-label="Key facts">
+  <div class="wrap">
+    <div class="proof-grid">
+      <div class="stat reveal"><div class="num"><span class="ph">[X]</span><span class="tick">+</span></div><div class="lbl">Orders &amp; quotations processed end-to-end</div></div>
+      <div class="stat reveal"><div class="num"><span class="ph">[X]</span></div><div class="lbl">Supplier &amp; vendor relationships coordinated</div></div>
+      <div class="stat reveal"><div class="num"><span class="ph">[X]</span> <span style="font-size:.5em;font-weight:700">yrs</span></div><div class="lbl">Running operations &amp; admin end-to-end</div></div>
+      <div class="stat reveal"><div class="num">100<span class="tick">%</span></div><div class="lbl">Remote-ready — own equipment &amp; stable internet</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <div class="eye"><span class="idx">01</span><span class="kicker">About</span></div>
+        <h2>A business owner who'd rather run the operation than own it.</h2>
+        <p>For the past <span class="ph">[X]</span> years I've run <strong>R&nbsp;P Medical Equipment &amp; Supplies Trading</strong> — which meant personally owning the work most companies split across a whole team. Procurement, supplier coordination, quotations, invoicing, documentation, customer support, and the quiet process-fixing that keeps orders moving: all of it, end to end.</p>
+        <p>Here's the honest part: what I love isn't being the owner — it's making the operation run. I'd rather be the steady person behind a busy leader than carry the overhead of a business. I'm organised to a fault, calm when the volume spikes, and I don't consider something done until it's actually done. I'm looking for a role I can settle into and grow in for the long term.</p>
+      </div>
+      <aside class="why-card reveal">
+        <span class="kicker">Why this role, now</span>
+        <p>I'm intentionally moving from running my own business to supporting one — to apply years of operational judgement inside a team. Not to step away when things get busy, but to commit to a role for the long term.</p>
+        <div class="sig">— Answering the question before it's asked</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCIES -->
+<section class="block alt" id="competencies">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">02</span><span class="kicker">Core competencies</span></div>
+      <h2>Everything a lean operation needs — in one person.</h2>
+      <p class="lead">Grouped the way a recruiter reads a job description, so the match is obvious at a glance.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+        <h3>Operations &amp; Process</h3>
+        <ul><li>Process improvement</li><li>SOPs &amp; documentation</li><li>Workflow design</li><li>Reporting &amp; tracking</li></ul>
+      </div>
+      <div class="comp reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Administration &amp; Coordination</h3>
+        <ul><li>Calendar &amp; email management</li><li>Scheduling &amp; coordination</li><li>Data entry &amp; accuracy</li><li>Records &amp; file management</li></ul>
+      </div>
+      <div class="comp reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Customer Service &amp; Support</h3>
+        <ul><li>Client communication</li><li>Issue resolution</li><li>Relationship management</li><li>CRM &amp; follow-through</li></ul>
+      </div>
+      <div class="comp reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M3 6h18l-2 9H7L5 4H3"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg></div>
+        <h3>Procurement &amp; Vendors</h3>
+        <ul><li>Supplier coordination</li><li>Purchase orders</li><li>Quotations &amp; invoicing</li><li>Inventory tracking</li></ul>
+      </div>
+      <div class="comp reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+        <h3>Documents &amp; Tools</h3>
+        <ul><li>Google Workspace</li><li>Microsoft Office</li><li>Canva</li><li>Templates &amp; systems</li></ul>
+      </div>
+      <div class="comp dark reveal">
+        <h3>Adaptable to your stack, and your way of working.</h3>
+        <p>New tool or new process? I learn quickly and follow it — no ramp-up cost, no reinventing how your team already runs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">03</span><span class="kicker">Professional experience</span></div>
+      <h2>One role. The whole back office.</h2>
+      <p class="lead">When you run the business, there's no one to hand the hard parts to — so I learned all of them.</p>
+    </div>
+    <div class="exp reveal">
+      <div class="exp-top">
+        <div>
+          <div class="role">Owner — <span>Operations &amp; Administration</span></div>
+          <div class="co">R P Medical Equipment &amp; Supplies Trading</div>
+        </div>
+        <div class="meta"><span class="ph">[ START YR ]</span> — PRESENT<br><span class="ph">[ LOCATION ]</span></div>
+      </div>
+      <div class="exp-body">
+        <p class="exp-scope">Ran the full operational and administrative function of a medical-equipment trading business — from sourcing and suppliers through to the customer on the other end of the order.</p>
+        <ul class="exp-list">
+          <li><span class="b">PROC</span><p>Managed end-to-end procurement: sourcing, supplier coordination, purchase orders, and <span class="ph">[X]</span> active vendor relationships. <span class="ph-block">[ add a result — e.g. better terms or lead times ]</span></p></li>
+          <li><span class="b">ADMIN</span><p>Produced quotations, invoices, and reports; <strong>standardised templates</strong> to speed turnaround and cut errors. <span class="ph-block">[ add the before/after if you have it ]</span></p></li>
+          <li><span class="b">SUPP</span><p>Handled customer enquiries and after-sales support, maintaining <span class="ph">[ describe client base ]</span> through clear, timely communication.</p></li>
+          <li><span class="b">SYS</span><p>Designed and documented repeatable processes — <strong>SOPs and trackers</strong> — to keep operations consistent as order volume grew.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section class="block alt" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">04</span><span class="kicker">Selected projects</span></div>
+      <h2>A few problems worth showing.</h2>
+      <p class="lead">Anonymised case studies of the systems I've built. Swap each placeholder for a real, redacted screenshot and your own figures.</p>
+    </div>
+    <div class="projects">
+
+      <article class="project reveal">
+        <div class="media"><span class="tag">Anonymised</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg></div>
+        <div class="body">
+          <span class="pn">Project 01</span>
+          <h3>Quotation &amp; Invoicing System</h3>
+          <p class="ctx">A reusable system for quoting and billing that anyone could pick up and run consistently.</p>
+          <div class="pao">
+            <div class="row"><span class="lab">Problem</span><span class="txt">Every quote was built from scratch — slow, inconsistent, and easy to get wrong.</span></div>
+            <div class="row"><span class="lab">Action</span><span class="txt">Standardised a template with built-in pricing logic and validation checks.</span></div>
+            <div class="row out"><span class="lab">Outcome</span><span class="txt">Turnaround cut from <span class="ph">[2 days]</span> to <span class="ph">[4 hrs]</span>, with <span class="ph">[near-zero]</span> pricing errors.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="media"><span class="tag">Anonymised</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M3 6h18l-2 9H7L5 4H3"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg></div>
+        <div class="body">
+          <span class="pn">Project 02</span>
+          <h3>Procurement &amp; PO Tracker</h3>
+          <p class="ctx">One source of truth for everything moving through the supply pipeline.</p>
+          <div class="pao">
+            <div class="row"><span class="lab">Problem</span><span class="txt">Orders and suppliers were tracked across scattered messages and memory.</span></div>
+            <div class="row"><span class="lab">Action</span><span class="txt">Built a single tracker for orders, suppliers, status, and reorder points.</span></div>
+            <div class="row out"><span class="lab">Outcome</span><span class="txt"><span class="ph">[X]</span> vendors coordinated with full visibility; fewer missed and duplicated orders.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="media"><span class="tag">Anonymised</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+        <div class="body">
+          <span class="pn">Project 03</span>
+          <h3>SOPs &amp; Process Documentation</h3>
+          <p class="ctx">The difference between a business that depends on one person and one that can scale.</p>
+          <div class="pao">
+            <div class="row"><span class="lab">Problem</span><span class="txt">Key processes lived only in my head — impossible to delegate or grow.</span></div>
+            <div class="row"><span class="lab">Action</span><span class="txt">Documented clear, repeatable SOPs and checklists for the core tasks.</span></div>
+            <div class="row out"><span class="lab">Outcome</span><span class="txt">Output stayed consistent as volume grew; <span class="ph">[task]</span> now runs the same way every time.</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="block" id="impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">05</span><span class="kicker">Impact &amp; results</span></div>
+      <h2>Work measured by outcomes, not activity.</h2>
+      <p class="lead">The pattern is always the same: a change, the measure, the result. Replace the figures with your real, defensible numbers.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="imp reveal"><div class="big"><span class="ph">[X]</span>%</div><div class="desc">Faster quotation turnaround after <b>standardising the process</b>.</div></div>
+      <div class="imp reveal"><div class="big"><span class="ph">[X]</span>%</div><div class="desc">Fewer repeat ordering errors after introducing a <b>checklist &amp; tracker</b>.</div></div>
+      <div class="imp reveal"><div class="big"><span class="ph">[X]</span></div><div class="desc">Vendor relationships kept <b>on-time and accurate</b> across the pipeline.</div></div>
+    </div>
+    <div class="impact-note reveal">Figures shown are placeholders — use only numbers you can defend in an interview.</div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="block alt" id="tools">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">06</span><span class="kicker">Tools &amp; software</span></div>
+      <h2>Ready on day one.</h2>
+      <p class="lead">No ramp-up cost — and the remote logistics are already handled.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div><div><div class="tn">Google Workspace</div><div class="ts">DOCS · SHEETS · GMAIL</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8l8 8M16 8l-8 8"/></svg></div><div><div class="tn">Microsoft Office</div><div class="ts">EXCEL · WORD · OUTLOOK</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg></div><div><div class="tn">Canva</div><div class="ts">DOCS · DESIGN</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 7h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><div class="tn"><span class="ph">[ CRM ]</span></div><div class="ts">ADD YOURS</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 12h8"/></svg></div><div><div class="tn"><span class="ph">[ Slack ]</span></div><div class="ts">COMMS</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="6" width="14" height="12" rx="2"/><path d="M17 10l4-2v8l-4-2z"/></svg></div><div><div class="tn"><span class="ph">[ Zoom ]</span></div><div class="ts">MEETINGS</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h4v8H7zM14 8h3v5h-3z"/></svg></div><div><div class="tn"><span class="ph">[ Trello / Asana ]</span></div><div class="ts">PROJECTS</div></div></div>
+      <div class="tool reveal"><div class="td"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/></svg></div><div><div class="tn">Documentation</div><div class="ts">SOPs · TEMPLATES</div></div></div>
+    </div>
+    <div class="remote-line reveal">
+      <b>REMOTE SETUP</b>&nbsp;&nbsp;Dedicated home workspace&nbsp;·&nbsp;stable fibre internet <span class="ph">[ confirm speed ]</span>&nbsp;·&nbsp;backup power <span class="ph">[ if applicable ]</span>&nbsp;·&nbsp;own equipment&nbsp;·&nbsp;PHT with <span class="ph">[ AEST / EST / GMT ]</span> overlap
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="block" id="testimonials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eye"><span class="idx">07</span><span class="kicker">Testimonials</span></div>
+      <h2>Trusted by the people I've worked with.</h2>
+      <p class="lead">Request these this week from a client or supplier — they stand in for a formal reference.</p>
+    </div>
+    <div class="test-lead reveal">
+      <div class="mark">&ldquo;</div>
+      <blockquote><span class="ph-block">[ Two specific sentences about your reliability and communication — how you handled their orders, kept things organised, and always followed through. ]</span></blockquote>
+      <div class="attr"><div class="av">PH</div><div class="who"><span class="ph">[ Name ]</span><span><span class="ph">[ Role · Company ]</span></span></div></div>
+    </div>
+    <div class="test-row">
+      <div class="test-sm reveal">
+        <p><span class="ph-block">[ Short quote about working with you — focus on professionalism and responsiveness. ]</span></p>
+        <div class="attr"><div class="av">—</div><div class="who"><span class="ph">[ Name ]</span><span><span class="ph">[ Role · Company ]</span></span></div></div>
+      </div>
+      <div class="test-sm reveal">
+        <p><span class="ph-block">[ Short quote from a supplier or partner on how dependable you are to coordinate with. ]</span></p>
+        <div class="attr"><div class="av">—</div><div class="who"><span class="ph">[ Name ]</span><span><span class="ph">[ Role · Company ]</span></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eye"><span class="idx" style="color:#878f9d">08</span><span class="kicker">Contact</span></div>
+    <h2>Let's connect.</h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-lead">Tell me what's on your plate. Whether it's a full-time role or ongoing support, I'll reply with exactly how I can take the operational load off your team.</p>
+        <div class="contact-cta">
+          <a href="mailto:[you@email.com]" class="btn btn-primary">Email me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+          <a href="#" class="btn btn-ghost" data-doc>Download résumé</a>
+        </div>
+        <div class="contact-specs">
+          <div class="row"><span class="k">EMAIL</span><span class="v"><span class="ph">[ you@email.com ]</span></span></div>
+          <div class="row"><span class="k">LINKEDIN</span><span class="v"><span class="ph">[ /in/your-handle ]</span></span></div>
+          <div class="row"><span class="k">LOCATION</span><span class="v"><span class="ph">[ Metro Manila, PH ]</span></span></div>
+          <div class="row"><span class="k">RESPONSE</span><span class="v">Within 1 business day</span></div>
+        </div>
+      </div>
+      <form class="form reveal" id="contactform" novalidate>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" placeholder="Jane Recruiter" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" placeholder="you@company.com" required></div>
+        <div class="field"><label for="f-msg">What do you need help with?</label><textarea id="f-msg" placeholder="A few lines about the role or the work…"></textarea></div>
+        <button type="submit" class="btn btn-primary">Send message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+        <div class="form-note" id="formnote">Connect this form to your email or a form service before launch.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (simplified) -->
+<footer>
+  <div class="wrap foot">
+    <a href="#top" class="brand"><span class="dot"></span>[Your Name]<small>Operations · Admin</small></a>
+    <div class="foot-links">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#" data-doc>Résumé</a><a href="#">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap foot-base">© <span id="yr"></span> [Your Name] · Operations &amp; Administrative Professional</div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="#" class="btn btn-primary" data-doc>Résumé</a>
+  <a href="mailto:[you@email.com]" class="btn btn-ghost">Email me</a>
+</div>
+
+<script>
+  document.documentElement.classList.remove('no-js');
+  document.documentElement.classList.add('js');
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 12);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  const burger = document.getElementById('burger');
+  const closeMenu = () => { document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); };
+  burger.addEventListener('click', () => {
+    const open = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('#mobilemenu a').forEach(a => a.addEventListener('click', closeMenu));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i) => {
+    el.style.transitionDelay = Math.min((i % 5) * 70, 280) + 'ms';
+    io.observe(el);
+  });
+
+  const navmap = {};
+  document.querySelectorAll('.nav-links a').forEach(a => navmap[a.getAttribute('href').slice(1)] = a);
+  const secIO = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){
+      Object.values(navmap).forEach(a=>a.classList.remove('active'));
+      if(navmap[e.target.id]) navmap[e.target.id].classList.add('active');
+    }});
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  ['about','competencies','projects','impact','contact'].forEach(id=>{
+    const s=document.getElementById(id); if(s) secIO.observe(s);
+  });
+
+  document.querySelectorAll('[data-doc]').forEach(a=>a.addEventListener('click', e=>{
+    e.preventDefault();
+    alert('Placeholder: link this to your résumé PDF before launch.');
+  }));
+  document.getElementById('contactform').addEventListener('submit', e=>{
+    e.preventDefault();
+    document.getElementById('formnote').textContent = 'Demo only — wire this up to email/Formspree to receive messages.';
+  });
+</script>
+</body>
+</html>
